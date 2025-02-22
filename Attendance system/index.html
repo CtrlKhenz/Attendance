@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Attendance Checker</h2>
+
+    <!-- Manual Date Input -->
+    <label for="dateInput">Enter Date:</label>
+    <input type="text" id="dateInput" placeholder="YYYY-MM-DD">
+
+    <!-- Input for Name -->
+    <input type="text" id="nameInput" placeholder="Enter Name">
+    <button onclick="markAttendance()">Mark Attendance</button>
+    <button onclick="resetForm()">Reset</button> <!-- ✅ Reset Button -->
+
+    <!-- Attendance Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceList"></tbody>
+    </table>
+
+    <!-- Buttons for CSV and Clearing Data -->
+    <button onclick="exportTextFile()">Download Attendance</button>
+    <button onclick="clearAttendance()">Clear Attendance</button>
+    <script src="script.js"></script>
+    <footer>
+        <p>Made by <strong>Khenert Catayao</strong></p>
+    </footer>
+</body>
+</html>
